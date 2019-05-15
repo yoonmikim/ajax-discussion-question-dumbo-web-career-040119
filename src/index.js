@@ -8,6 +8,15 @@ document.addEventListener("DOMContentLoaded", () => {
 function fetchData(){
         var data = fetch('https://randomuser.me/api/')
           .then( res => res.json() )
+          .then( res => res )
+        console.log(data)   
+}
+ 
+fetchData()
+
+function fetchData(){
+        var data = fetch('https://randomuser.me/api/')
+          .then( res => res.json() )
           .then( console.log )
 }
  
