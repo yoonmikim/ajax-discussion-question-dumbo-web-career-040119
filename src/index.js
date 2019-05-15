@@ -17,6 +17,14 @@ fetchData()
 function fetchData(){
         var data = fetch('https://randomuser.me/api/')
           .then( res => res.json() )
+          .then( json => console.log(json) )
+}
+ 
+fetchData()
+
+function fetchData(){
+        var data = fetch('https://randomuser.me/api/')
+          .then( res => res.json() )
           .then( console.log )
 }
  
